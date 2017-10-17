@@ -1,0 +1,779 @@
+@charset "utf-8";
+
+/*------------------------------------ΑΡΧΗ HOMEPAGE ----------------------------------------------- */
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body {
+	font-family:arial;
+}
+
+
+.wrapper {
+ 	max-width:1024px;
+	margin:0 auto;
+}
+
+header {
+	width:100%;
+}
+
+#topLeft {
+	float:left;
+	width: 20.8%;
+}
+
+#topRight {
+	float:left;
+	width:79.2%;
+}
+
+#topRight h1 {
+	text-align:center;
+	padding-top:5px;
+}
+
+ /*-------------------MENU BEGINS-----------------------*/
+ 
+nav {
+	margin-top:18px;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+
+nav ul li {
+	list-style:none;
+	float:left;
+	background-color:grey;
+	border-radius:5px;
+	margin-left:5px;
+}
+
+nav ul li a{
+	text-decoration:none;
+	color:blue;
+	display:block;
+	padding:15px;
+	font-weight:bold;
+}
+
+nav ul li a:hover {
+	color:#ffffff;
+}
+
+.current {
+	color:#ffffff;
+}
+
+ /*-------------------MENU ENDS-----------------------*/
+
+#breadcrumbs {
+	font-size:15px;
+	margin-left:3%;
+}
+
+#middleLeft {
+	float:left;
+	width:20.8%;
+}
+
+.photo100 {
+	width:100%;
+}
+
+.topBlank {
+	margin-top:18px;
+}
+
+.bottomBlank {
+	margin-bottom:18px;
+}
+
+#middleRight {
+	float:left;
+	width:79.2%;
+}
+
+#mrTop {
+	width:100%;
+	float:left;
+}
+
+.par1 {
+	padding-left:4%;
+	padding-right:8%;
+	padding-top:26.5px;
+}
+
+#mrBottom {
+	width:100%;
+	float:left;
+}
+
+/*------BOXES HOMEPAGE BEGIN --------- */
+
+.box1 {
+	width:45%;
+	margin-top:36px;
+	margin-left:3%;
+	text-align:center;
+	background-color:#6d6de2;
+	float:left;
+}
+
+.pBox1Title {
+	color:#ffffff;
+	font-weight:bold;
+	padding-bottom:20px;
+}
+
+.pBox1Content {
+	color:#ffffff;
+	padding-left:5%;
+	padding-right:5%;
+	padding-bottom:60px;
+}
+
+.pMore {
+	padding-bottom:59px;	
+}
+
+.aMore {
+	background-color:black;
+	font-size:15px;
+	color:#fff;
+	text-decoration:none;
+	padding:5px;
+	border-radius:5px;
+}
+
+/*------BOXES HOMEPAGE END --------- */
+
+#bottom {
+	float:left;
+	width:100%;
+	margin-bottom:18px;
+}
+
+
+/*------FOOTER BEGIN --------- */
+
+footer {
+	clear:both;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+#footerTop {
+	position:relative;
+	left:-1200px;
+	width:100%;
+	text-align:center;
+	font-size:36px;
+	float:left;
+	padding-bottom:20px;
+	animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+#footerBottom {
+	float:left;
+	width:100%;
+}
+
+#footerBottomLeft {
+	float:left;
+	width:50%;
+}
+
+#footerBottomRight{
+	width:50%;
+	float:right;
+}
+
+.fbRightImg {
+	float:right;
+	margin-left:5px;
+}
+/*------FOOTER ENDS --------- */
+
+/* ----- HOMEPAGE RESPONSIVE BEGINS -------*/
+
+@media screen and (max-width:1024px) {
+
+.pMore {
+	padding-bottom:29px;	
+}
+
+.box1 {
+	font-size:12px;
+}
+
+}
+
+@media screen and (max-width:930px) {
+
+.pMore {
+	padding-bottom:10px;	
+}
+
+.pBox1Content {
+	padding-bottom:30px;
+}
+
+
+}
+
+@media screen and (max-width:870px) {
+
+.pBox1Content {
+	display:none;
+}
+
+nav ul li a{
+	padding:5px;
+}
+
+
+}
+
+
+
+@media screen and (max-width:768px) {
+
+#topLeft {
+	display:none;
+}
+
+#middleLeft {
+	display:none;
+}
+
+#breadcrumbs {
+	display:none;
+}
+
+.box1 {
+	display:none;
+}
+
+
+header {
+	text-align:center;
+}
+
+#topRight {
+	width:100%;
+}
+
+#topRight h1 {
+	font-size:25px
+}
+
+nav ul li {
+	width:32%;
+	margin-top:4px;
+	border-radius:0px;
+}
+
+nav ul li a {
+	padding:15px;
+}
+
+#middleRight {
+	width:100%;
+}
+
+.par1 {
+	padding-right:4%;
+}
+
+.resPar1 {
+	padding-bottom:26px;
+}
+
+.photo100 {
+	width:95%;
+	text-align:center;
+	margin-left:2%;
+}
+
+#footerTop {
+	font-size:30px;
+}
+
+
+}
+
+@media screen and (max-width:420px) {
+
+#bPhoto {
+	display:none;
+}
+
+nav ul li {
+	width:48%;
+	margin-top:4px;
+}
+
+.resPar1 {
+	padding-bottom:0px;
+}
+
+#footerTop {
+	font-size:35px;
+}
+
+#footerBottomLeft {
+	width:100%;
+	font-size:15px;
+	text-align:center;
+}
+
+#footerBottomRight {
+	width:100%;
+	text-align:center;
+}
+
+.fbRightImg {
+	float:none;
+    width:20px;
+	height:20px;
+	margin-top:10px;
+}
+
+}
+
+/* ----- HOMEPAGE RESPONSIVE ENDS -------*/
+/*------------------------------------HOMEPAGE ENDS ----------------------------------------------- */
+
+/*------------------------------------TRANSPORTATION BEGINS----------------------------------------*/
+
+
+#mrTopPTrans {
+	width:100%;
+	float:left;
+	text-align:center;
+	padding-top:20px;
+	animation:rotation 3s linear;
+}
+
+@keyframes rotation {
+	0% { transform:rotate(0deg)}
+	100% {transform:rotate(360deg)}
+}
+
+
+#mrBottomPTrans {
+	width:100%;
+	float:left;
+}
+
+
+@media screen and (max-width:1024px) {
+
+#mrBottomPTrans {
+	font-size:14px;
+}
+
+}
+
+@media screen and (max-width:930px) {
+
+#mrBottomPTrans {
+	font-size:12px;
+}
+
+
+}
+
+@media screen and (max-width:870px) {
+
+#mrBottomPTrans {
+	font-size:10px;
+}
+
+
+}
+
+
+@media screen and (max-width:768px) {
+
+#mrTopPTrans {
+	display:none;
+}
+
+#mrBottomPTrans {
+	font-size:15px;
+}
+
+}
+
+/*------------------------------------TRANSPORTATION ENDS----------------------------------------*/
+
+/*------------------------------------KOINSEP BEGINS----------------------------------------*/
+#mrTopKoinsep  {
+	width:100%;
+	float:left;
+	text-align:center;
+	padding-top:20px;
+	position:relative;
+	left:-1200px;
+	animation:truck 2s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes truck {
+	50% {left:330px;}
+	100% {left:0;}
+}
+
+
+
+
+@media screen and (max-width:768px) {
+
+#mrTopKoinsep {
+	display:none;
+}
+
+}
+
+
+
+/*------------------------------------KOINSEP ENDS----------------------------------------*/
+
+/*------------------------------------IDENTITY BEGINS----------------------------------------*/
+
+#mrTopPIde{
+	margin-top:20px;
+}
+
+.idePar1 {
+	padding-left:5%;
+	padding-right:6%;
+}
+
+.idePar2 {
+	padding-left:5%;
+	padding-right:6%;
+	padding-top:15px;
+}
+
+#mrBottomIde li {
+	list-style:none;
+	width:90%;
+	margin-left:5%;
+	margin-top:20px;
+}
+
+#mrBottomIde li a {
+	text-decoration:none;
+	color:#ffffff;
+	height:45px;
+	width:100%;
+	background-color:#003AD9;
+	display:block;
+	text-align:center;
+	line-height:45px;
+	border:1px black solid;
+	border-radius:10px;
+	float:left;
+}
+
+
+#ideLi1 {
+	position:relative;
+	top:-1200px;
+	animation: ide1 2s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes ide1 {
+    100% { top: 0; }
+}
+
+#ideLi2 {
+	position:relative;
+	top:-1200px;
+	animation: ide2 2s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes ide2 {
+    100% { top: 0; }
+}
+
+#ideLi3 {
+	position:relative;
+	top:-1200px;
+	animation: ide3 2s forwards;
+    animation-delay: 3s;
+}
+
+@keyframes ide3 {
+    100% { top: 0; }
+}
+
+#ideLi4 {
+	position:relative;
+	top:-1200px;
+	animation: ide4 2s forwards;
+    animation-delay: 4s;
+}
+
+@keyframes ide4 {
+    100% { top: 0; }
+}
+
+#mrBottomIde .hidden {
+	height:0;
+	overflow:hidden;
+	width:100%;
+	text-align:center;
+	background-color:#F9C6F7;
+	border-radius:10px;	
+}
+
+#first:target + .hidden {
+	height:100%;
+	transition:all 2s ease;
+}
+
+#second:target + .hidden {
+	height:100%;
+	transition:all 2s ease;
+}
+
+#third:target + .hidden {
+	height:100%;
+	transition:all 2s ease;
+}
+
+#fourth:target + .hidden {
+	height:100%;
+	transition:all 2s ease;
+}
+
+#first:target + .hidden p {
+	color:#000000;
+	transition:all 1s ease;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+#second:target + .hidden p {
+	color:#000000;
+	transition:all 1s ease;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+#third:target + .hidden p {
+	color:#000000;
+	transition:all 1s ease;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+#fourth:target + .hidden p {
+	color:#000000;
+	transition:all 1s ease;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.hidden p {
+	color:#F9C6F7;
+}
+
+#mrBottomIde img {
+	 float:left;
+ }
+ 
+ @media screen and (max-width:1040px) {
+
+#bPhotoIde {
+	margin-top:26px;
+}
+
+}
+
+@media screen and (max-width:420px) {
+
+#bPhotoIde {
+	display:none;
+}
+
+}
+
+/*------------------------------------IDENTITY ENDS----------------------------------------*/
+
+/*------------------------------------FAQ BEGINS----------------------------------------*/
+
+#mrTopFAQ{
+	margin-top:20px;
+}
+
+.faqP {
+	padding-left:5%;
+	padding-right:6%;
+}
+
+#mrBottomFAQ {
+	width:90%;
+	margin-left:5%;
+	margin-top:20px;
+}
+
+#mrBottomFAQ input {
+	display:none;
+}
+
+#mrBottomFAQ label {
+	width:100%;
+	background-color:#E4C004;
+	color:#ffffff;
+	display:block;
+	padding-left:2%;
+	padding-top:1%;
+	padding-bottom:1%;
+	border:1px solid #000000;
+	cursor:pointer;
+}
+
+.answers {
+	height:0px;
+	overflow:hidden;
+	width:100%;
+	background-color:#F6FBD1;
+}
+
+input[type="checkbox"]:checked + .answers {
+	height:100%;
+	border:1px solid #000000;
+	padding-left:2%;
+	padding-right:1%;
+	padding-top:1%;
+	padding-bottom:1%;
+}
+
+#bottomFAQ {
+	float:left;
+	width:100%;
+	margin-bottom:18px;
+	margin-top:18px;
+}
+
+
+/*------------------------------------FAQ ENDS----------------------------------------*/
+
+/*------------------------------------CONTACT BEGINS----------------------------------------*/
+
+#mrLeftCon {
+	width:35%;
+	padding-top:15px;
+	padding-left:5%;
+	float:left;
+}
+
+fieldset {
+	padding-bottom:20px;
+}
+
+.labels {
+    display: inline-block;
+    width: 90%;
+    text-align:center;
+	margin-top:10px;
+}
+
+#labelName {
+	margin-top:30px;
+}
+
+input {
+	width:90%;
+	height:25px;
+	background-color:#DBDBDB;
+	text-align:center;
+	margin-top:10px;
+	margin-left:5%;
+	border-radius:5px;
+}
+
+textarea {
+	width:90%;
+	margin-top:10px;
+	margin-left:5%
+}
+
+input[type="submit"] {
+	width:90%;
+	margin-top:30px;
+	margin-left:4%;
+}
+
+#mrRightCon {
+	float:left;
+	width:55%;
+	margin-left:5%;
+	margin-top:20px;
+}
+
+@media screen and (max-width:1024px) {
+
+#mrLeftCon {
+	margin-bottom:20px;
+}
+
+#mrRightCon {
+	margin-bottom:20px;
+}
+
+}
+
+@media screen and (max-width:768px) {
+
+#mrLeftCon {
+	width:90%;
+	padding-top:15px;
+	padding-left:9%;
+	margin-bottom:20px;
+}
+
+
+#mrRightCon {
+	display:none;
+}
+
+}
+
+/*------------------------------------CONTACT ENDS----------------------------------------*/
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
